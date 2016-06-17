@@ -5,9 +5,9 @@ require_relative '../../app/models/post.rb'
 
 RSpec.describe "blog" do
 	let(:blog) { Blog.new }
-	let(:post1) { Post.new("Lorem", Time.local(2016, 4, 6), "Lorem ipsum dolor sit amet, Culture, Ana") }
-	let(:post2) { Post.new("Livamus", Time.local(2016, 3, 10), "LVivamus feugiat mauris,  Economics, Jhon") }
-	let(:post3) { Post.new("Etiam", Time.local(2016, 2, 7), "Etiam aliquam leo eu ligula, Math, Jean") }
+	let(:post1) { Post.new("Lorem", Time.local(2016, 4, 6), "Lorem ipsum dolor sit amet", "Culture", "Ana") }
+	let(:post2) { Post.new("Livamus", Time.local(2016, 3, 10), "LVivamus feugiat mauris",  "Economics", "Jhon") }
+	let(:post3) { Post.new("Etiam", Time.local(2016, 2, 7), "Etiam aliquam leo eu ligula", "Math", "Jean") }
 
 	it "returns an array of the posts added" do
 	  # expect(blog.array.size).to eq(3)
