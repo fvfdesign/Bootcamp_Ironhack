@@ -14,7 +14,7 @@ RSpec.describe "blog" do
 	    expect(blog.add_post(post1).class).to be([].class)
 	end
 
-	it "order posts by date from with the latest posts being first" do
+	it "order posts by date with the latest posts being first" do
 		blog.add_post(post1)
 		blog.add_post(post2)
 		blog.add_post(post3)
