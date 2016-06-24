@@ -1,0 +1,51 @@
+*, *:before, *after {
+	box-sizing: border-box;
+}
+
+.parent {
+	height: 150px;
+	background: tomato;
+	width: 50%;
+	border: 5px solid black;
+	position: relative;
+}
+.content {
+	height: 80px;
+	width: 100%;
+	background: blue;
+
+	position: absolute;
+	top: auto: 10px;
+	bottom: auto: 10px;
+	left: auto: 50px;
+	right: auto: 50px;
+
+}
+
+
+.clase{
+
+	color: yellow;
+/*	border: 1px solid red;*/
+	text-align: center;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+
+
+
+
+/*.child {
+	height: 150px;
+	background: tomato;
+	width: 50%;
+	position: absolute;
+	top: auto: 10px;
+	bottom: auto: 10px;
+	left: auto: 50px;
+	right: auto: 50px;*/
+
+/*	border: 20px solid black;
+}*/

@@ -1,0 +1,37 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+code{
+	background:  #2db34a;
+	border-radius: 6px;
+	color:  #fff;
+	display: block;
+	padding: 24px 15px;
+	text-align: center;
+}
+
+header,
+section,
+aside,
+footer {
+	margin: 0 1.5% 24px 1.5%;
+}
+
+

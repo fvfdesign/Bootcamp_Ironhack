@@ -1,0 +1,30 @@
+*, *:before, *after {
+	box-sizing: border-box;
+}
+
+.blue {
+/*	background: blue;*/
+	position: relative;
+	width: 100%;
+}
+.red{
+	border: 1px solid #999;
+	background: tomato;
+	width: 33%; 
+	height: 100px; 
+	display: inline-block;
+	position: relative;
+}
+
+.yellow {
+	border: 1px solid #999;
+	background: yellowgreen;
+	width: 33%; 
+
+	height: 200px; 
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	top:0;
+
+}
