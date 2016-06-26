@@ -1,3 +1,7 @@
+// AYUDA DE ALFONSO Y CILLAS
+// NO ACABADO, DA ERROR
+
+
 var read = require('read');
 
 options = {
@@ -30,10 +34,6 @@ var question04 = new Question("en que mes estamos?", "Junio");
 
 var arrayQuestions =[question01, question02, question03, question04];
 
-// function displayAnswer (err, userAnswer){
-//     console.log("Your answer is: " + userAnswer)
-
-// }
 
 
 
@@ -61,29 +61,5 @@ var quizz1 = new Quizz(arrayQuestions);
 
 
 
-
-
-
-
-
-
-
-
-// console.log("user01 answer");
-// setTimeout(callback,3000);
-
-// console.log("user02 answer");
-// setTimeout(callback,3000);
-
-// console.log("user03 answer");
-// setTimeout(callback,3000);
-
-// console.log("user04 answer");
-// setTimeout(callback,3000);
-
-
-// function callback(){
-
-// 	console.log("probando question")
 
 

@@ -1,4 +1,5 @@
 // AYUDA DE ALFONSO Y RAUL
+// NO ACABADO
 
 var Viking = function(name){
 
