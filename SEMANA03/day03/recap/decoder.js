@@ -17,7 +17,7 @@ words = [
     "attention",    // 2nd -> t
     "agent"         // 3rd -> e
 ];
-
+var read = require('read');
 // message should be "dynamite"
 
 words[0][0],[1][1],
