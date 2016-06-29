@@ -1,0 +1,35 @@
+<h1>Projects</h1>
+<ul>
+	
+	<% @projects.each do |project| %> <!-- no se pone el simbolo "=" xk no queremos mostrar nada -->
+
+	<li>
+
+		<% if (project.description)%>
+		<%= project.name%> - <%= project.description%> 
+
+		<%else%> 
+		<%=project.name%>
+
+		<%end%>
+
+	</li>
+
+
+	<% end %>
+
+</ul>
+
+<!-- 	<%= project.name %>
+	<%#if project.description.present?%>
+	<%= #"- #{project.description}"%> <!- #project.description  -->
+<!-- 	<% #end %> --> 
+
+
+
+<!-- "{project.name} - #{project.description}" -->
+
+
+
+
+

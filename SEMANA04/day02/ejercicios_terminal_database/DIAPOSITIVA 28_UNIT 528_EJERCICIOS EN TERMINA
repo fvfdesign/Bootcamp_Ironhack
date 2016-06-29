@@ -1,0 +1,19 @@
+DIAPOSITIVA 28 /  UNIT 528 / EJERCICIOS EN TERMINAL
+
+Project.where('created_at<?', 1.month.ago).order('name ASC')
+
+
+date = Time.now.beginning_of_day - 1.month
+Project.where('created_at>?', date).order('name ASC')
+
+
+Project.where('updated_at>?', Date.yesterday).where('updated_at<?',Date.today)
+
+
+date1= Date,yesterday.beginning_of_day
+date2= Date,yesterday.end_of_day
+Project.where)'update_at >?,date1).where('update_at <?',date2)
+Project.where(update_at:date1,date2)
+
+
+ Project.find_by(id:3)
