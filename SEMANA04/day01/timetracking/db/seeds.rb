@@ -1,9 +1,53 @@
-poject.create(name: "xxxxx")
+25.times.each_with_index do |item, index|
+	project = Project.create(
+		name: "Project number #{index}",
+		description: "This is my project number #{index}"
+)
 
-(1..100).each do |i|
-	Project.create(name: "car" + i) #Project 1 (concate)
-	
+
+
+project.time_entries.create(
+date: Date.today - rand(10).days,
+hours: rand(24),
+minutes: rand(60)
+)
+
 end
+
+#Add project a time entry
+#Using: project.time_entries.create OR project 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# poject.create(name: "xxxxx")
+
+# (1..100).each do |i|
+# 	Project.create(name: "car" + i) #Project 1 (concate)
+	
+# end
 
 
 
