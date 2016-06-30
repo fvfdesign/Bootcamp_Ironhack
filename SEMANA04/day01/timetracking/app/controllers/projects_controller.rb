@@ -24,10 +24,6 @@ class ProjectsController < ApplicationController
 
 
 
-	# def new
-	# 	@projects = Project.find_by(params[:project_id])
-	# 	@entry = Entry.new
-	# end
 
 	def create
 		@project = Project.find_by(params[:project_id])

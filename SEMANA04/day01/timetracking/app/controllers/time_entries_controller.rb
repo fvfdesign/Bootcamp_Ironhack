@@ -44,7 +44,7 @@ class TimeEntriesController < ApplicationController
 		@project = Project.find params[:project_id]
 		@entry = @project.time_entries.find_by(id: params[:id])
 
-
+		#find the project / find the entry / update the entry / redirect to the entries index
 
 			if @entry.update(entry_params)
 			# if @entry.update(params[:time_entry])
@@ -64,15 +64,35 @@ class TimeEntriesController < ApplicationController
 
 	end
 
+	def destroy 
+		
+		#find the project
+		project = Project.find params[:project_id]
+
+		#find the entry
+		entry = project.time_entries.find(params[:id])
+
+		#delete the entry
+		entry.destroy
+
+		#redirect to the index action
+		redirect_to action: :index,  project_id: project.id
+
+		# NOTA Los @ se usan solo si vamos a mostrar la variable en  "views"
+	end
+
+
+
+
 	private
 
-		def entry_params
+	def entry_params
 
 		params.require(:time_entry).permit(:hours, :minutes, :date)
-		end
+	end
 
 
-		#find the project / find the entry / update the entry / redirect to the entries index
+
 	
 	
 end

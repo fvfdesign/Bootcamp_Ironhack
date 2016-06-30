@@ -33,6 +33,10 @@ patch "/projects/:project_id/time_entries/:id",
 	to: "time_entries#update", 
 	as: :project_time_entry
 
+delete "/projects/:project_id/time_entries/:id",
+	to: "time_entries#destroy",
+	as: :delete_project_time_entry
+
 end
 
 
