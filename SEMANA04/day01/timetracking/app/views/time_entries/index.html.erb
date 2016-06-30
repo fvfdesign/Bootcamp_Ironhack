@@ -1,0 +1,31 @@
+
+
+<h1><%= @project.name %></h1>
+
+<ul>
+	<% @entries.each do |entry| %>
+
+	<li>
+		<%="#{entry.hours}h #{entry.minutes}m - #{entry.date.to_date}" %>
+		<%=link_to "Edit", edit_project_time_entry_path(@project, entry)%>
+	</li>
+
+	<%end%>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

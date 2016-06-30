@@ -1,0 +1,31 @@
+<h1>Add a TIME ENTRY EDIT</h1>
+
+<%= form_for [@project, @entry] do |f| %>
+
+	<%= f.label :date %>
+	<%= f.text_field :date, size: 4  %> 
+	<%#size of the box (maxlength: max caracteres)%>
+
+	<br>
+
+	<%= f.label :hours %>
+	<%= f.text_field :hours, size: 4  %>
+
+	<br>
+	
+	<%= f.label :minutes %>
+	<%= f.text_field :minutes, size: 4  %>
+
+	<br>
+	
+	<%= f.label :comments %>
+	<%= f.text_area :comments %>
+
+	<br>
+
+	<%=f.submit "Save" %>
+	<%= link_to "Cancel", project_time_entries_path(@project)%>
+	
+	<%= f.button %>
+	
+<% end %>

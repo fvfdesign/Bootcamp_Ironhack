@@ -1,0 +1,56 @@
+<%= project.name %>
+	<%if project.description.present?%>
+	<%= "- #{project.description}"%> #project.description 
+ 	<% end %> 
+
+
+
+"{project.name} - #{project.description}"
+
+
+
+
+
+
+
+
+<h1>Time tracking Tool</h1>
+
+<ul>
+
+	<% @entries.each do |project| %> 
+
+	<li>
+
+	<%= entries.date%> - <%= entries.hours%> - <%= entries.minutes%> 
+	
+	
+	</li>
+
+	<% end %>
+
+</ul>
+
+
+
+
+
+
+
+
+<h1><%= @project.name %></h1>
+
+<ul>
+	<% @entries.each do |entry| %>
+
+	<li>
+		<%= entry.hours %>h <%= entry.minutes %>m - <%= entry.date.to_date %>
+	</li>
+
+	<%end%>
+
+</ul>
+
+
+
+
