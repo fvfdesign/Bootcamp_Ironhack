@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset ="UTF-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+
+<body>
+
+
+
+	<form >
+	  <div>
+	    <label for="contact_name">Name</label>
+	    <input type="text" name="contact[name]" id="contact_name">
+	  </div>
+
+	  <div>
+	    <label for="contact_address">Address</label>
+	    <textarea name="contact[address]" id="contact_address"></textarea>
+	  </div>
+
+	  <div>
+	    <label for="contact_phone">Phone number</label>
+	    <input type="tel" name="contact[phone_number]" id="contact_phone">
+	  </div>
+
+	  <div>
+	    <label for="contact_email">Email</label>
+	    <input type="email" name="contact[email_address]" id="contact_email">
+	  </div>
+
+	  <input type="hidden" name="authenticity_token"
+	      value="<%= form_authenticity_token %>">
+
+	    <button type="submit">Submit</button>
+	</form>
+
+
+	<script src="ejercicio04.js"></script>
+</body>
+</html>

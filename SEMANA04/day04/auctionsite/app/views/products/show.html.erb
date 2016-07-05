@@ -1,0 +1,44 @@
+
+
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+
+<p>
+	  <strong>Title:</strong>
+	  <%= @product.title %>
+</p>
+
+<p>
+	  <strong>Description:</strong>
+	  <%= @product.description %>
+</p>
+
+<p>
+	  <strong>Deadline:</strong>
+	  <%= @product.deadline %>
+</p>
+
+
+	<h2>Finished Auction</h2>
+
+	<%if @product.deadline != "2016-07-02 00:00:00"%> 
+
+		<% winner_bid = Bid.find(@product.user_id) %>
+	  	<% winner_user = User.find(winner_user.user_id) %>
+
+	  	<div>
+
+	    <p>The winner is <%= winner_user.first_name %> with a <%= winner_bid.amount %> bid!</p>
+	  	</div> 
+
+
+<% end %>
+
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+<%= link_to "Bid up", new_product_bid_path(@product) if @product.deadline != "2016-07-02 00:00:00" %> 
+

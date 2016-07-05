@@ -1,0 +1,24 @@
+<h1>Users</h1>
+<ul>
+	
+	<% @users.each do |user| %> 
+
+	<li>
+
+		<% if (user.name)%>
+		<%= user.name%>  <!-- user.user_id -->
+
+		<%else%> 
+		<%=user.name%>
+
+		<%end%>
+
+	</li>
+
+
+
+	<% end %>
+
+<!-- 	<h2><%= @products %></h2> -->
+
+</ul>

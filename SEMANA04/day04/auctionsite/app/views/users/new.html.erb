@@ -1,0 +1,23 @@
+<h2>Add a USER</h2>
+
+<%= form_for @user do |f| %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name, size: 10  %> 
+	<%#size of the box (maxlength: max caracteres)%>
+
+	<br>
+
+	<%= f.label :email %>
+	<%= f.text_field :email, size: 10  %>
+
+	<br>
+	
+
+
+	
+	<%= link_to "Cancel", "/" %>
+	
+	<%= f.button %>
+	
+<% end %>

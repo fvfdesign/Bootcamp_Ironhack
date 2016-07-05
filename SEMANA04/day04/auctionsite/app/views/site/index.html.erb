@@ -1,0 +1,17 @@
+<h2>Products</h2>
+
+<ul>
+	<% @products.each do |product| %>
+		<li> <%="#{product.title} , #{product.description}, #{product.deadline}" %> <%= link_to "View this product",  product_path(product)%> 
+		</li>
+	<% end %>
+</ul>
+
+<%= link_to "Back to home", "/" %><br>
+
+<%= link_to "Show Products", products_path %><br>
+
+
+
+
+

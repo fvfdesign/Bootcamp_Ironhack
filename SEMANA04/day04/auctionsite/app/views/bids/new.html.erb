@@ -1,0 +1,45 @@
+<h1>Bids</h1>
+
+<h2><%= @product.title %></h2>
+
+
+<%= form_for [@product, @bids] do |f| %>
+
+
+<br>
+
+  <%= label_tag :email %>
+  <%= text_field_tag :email %> 
+
+
+</br>
+
+
+<br>
+  
+  <%= f.label :amount %>
+  <%= f.text_area :amount, size: 10 %>
+
+</br>
+
+
+
+<%= f.button %>
+
+
+<%= link_to 'Back', products_path %>
+
+
+<% end %>
+
+<ul>
+
+
+
+
+
+
+
+
+
+

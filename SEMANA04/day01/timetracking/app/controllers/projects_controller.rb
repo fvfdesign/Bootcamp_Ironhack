@@ -38,6 +38,11 @@ class ProjectsController < ApplicationController
 			:name => params[:project][:name],
 			:description => params[:project][:description])
 
+		# @projects = Project.new(
+		# 	name: params[:project][:name],
+		# 	description: params[:project][:description])
+
+
 		@projects.save
 
 			redirect_to ("/projects/#{@projects.id}")

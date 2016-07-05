@@ -1,0 +1,43 @@
+<h1>Add Products</h1>
+
+<%= form_for [@user, @product] do |f| %>
+
+  <%= f.label :title %><br>
+  <%= f.text_field :title, size: 10  %> 
+  <%#size of the box (maxlength: max caracteres)%>
+
+
+  <br>
+  
+  <%= f.label :description %><br>
+  <%= f.text_area :description %>
+
+  <br>
+
+
+  <%= f.label :deadline %><br>
+  <%= f.text_field :deadline, size: 10  %>
+
+  <br>
+
+
+  <br>
+
+
+  <%= f.label :minimun_bid_price %><br>
+  <%= f.text_field :minimun_bid_price, size: 10  %>
+
+  <br>
+  
+
+
+<br><%= f.button %>
+<%= link_to 'Back', products_path %>
+
+
+<% end %>
+
+
+
+
+
